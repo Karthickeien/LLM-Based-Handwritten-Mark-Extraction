@@ -1,0 +1,207 @@
+/* Header Component */
+.app-header {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .header-subtitle {
+    color: #666;
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  /* ImageUploader Component */
+  .uploader-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .uploader-container h2 {
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+  }
+  
+  .drop-area {
+    border: 2px dashed var(--primary-color);
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: rgba(52, 152, 219, 0.05);
+  }
+  
+  .drop-area:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+  }
+  
+  .upload-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .image-preview {
+    max-width: 100%;
+    max-height: 300px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .preview-container p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .submit-button:disabled {
+    background-color: var(--medium-gray);
+    cursor: not-allowed;
+  }
+  
+  .help-text {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* ResultsDisplay Component */
+  .results-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .results-container h2 {
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+  }
+  
+  .results-container h3 {
+    margin: 20px 0 15px;
+    color: var(--primary-dark);
+  }
+  
+  .result-item {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .label {
+    font-weight: bold;
+    width: 150px;
+  }
+  
+  .questions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .question-item {
+    background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .q-label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .subtotal {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    border-top: 2px solid var(--border-color);
+    border-bottom: none;
+    padding-top: 15px;
+  }
+  
+  /* ExportOptions Component */
+  .export-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .export-container h3 {
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+  }
+  
+  .export-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .export-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex: 1;
+  }
+  
+  .export-button.csv {
+    background-color: var(--primary-color);
+  }
+  
+  .export-button.csv:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .export-button.excel {
+    background-color: var(--secondary-color);
+  }
+  
+  .export-button.excel:hover {
+    background-color: var(--secondary-dark);
+  }
+  
+  .export-button:disabled {
+    background-color: var(--medium-gray);
+    cursor: not-allowed;
+  }
+  
+  .export-help {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .export-buttons {
+      flex-direction: column;
+    }
+  }
